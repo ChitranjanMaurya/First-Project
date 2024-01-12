@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>CSS Assignment</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /*style the body*/
+    body {
+      font-family: Arial;
+      margin:0;
+    }
+
+    /*header style*/
+    .header {
+      padding: 60px;
+      text-align: center;
+      background-color: seagreen;
+      color: white;
+    }
+
+    /*navbar style*/
+    .navbar {
+      display: flex;
+      background-color: lightgray;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar a {
+      color: black;
+      padding: 15px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .navbar a:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sidebar {
+      flex: 30%;
+      background-color: azure;
+      padding: 20px;
+    }
+
+    .main-content {
+      flex: 70%;
+      background-color: antiquewhite;
+      padding: 20px;
+    }
+
+    .title-image {
+      background-color: tan;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+
+    .img {
+      background-color: #ffcc5c;
+      width: 50%;
+      max-width: 50%;
+      height: auto;
+      padding: 10px;
+      border-radius: 8px;
+      position: relative;
+
+      animation-name: image;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes image {
+      0%   {background-color:#FFFF33; left:0px; top:0px;}
+      25%  {background-color:#FFCC33; left:200px; top:0px;}
+      50%  {background-color:#FF9933; left:200px; top:50px;}
+      75%  {background-color:#FF6633; left:0px; top:50px;}
+      100% {background-color:#FF3333; left:0px; top:0px;}
+    }
+
+    .footer {
+      padding: 5px;
+      text-align: center;
+      background: cadetblue;
+    }
+
+    ul {
+      list-style-image: url("Assests/icon.png");
+    }
+
+    @media (max-width: 700px) {
+      .row, .navbar {
+        flex-direction: column;
+      }
+    }
+
+    </style>
+
+
+</head>
+
+<body>
+	<div style="background-color: pink; padding: 2px;">
+		<h4 style="text-align: center;">This is the CSS Assignment using the various CSS properties along with responsive web design.</h4>
+	</div>
+
+  <div class = "header">
+    <h1>Welcome to Responsive Webpage!</h1>
+    <p>With a <strong>Adjustable and Reactive</strong> layout.</p>
+  </div>
+
+  <div class = "navbar">
+    <a href = "index.html">Home</a>
+    <a href = "contactus.html">Contact Us</a>
+  </div>
+
+  <div class = "row">
+    <div class = "sidebar">
+      <h2>About Internship Studio</h2>
+      <h5>Photo of Internship Studio:</h5>
+      <img src = "Assests/web_dev.jpg" class = "title-image" style = "height: 200px;">
+      <p>Stay at your desired familiar environment and devour upon the technical and organizational aspects of the corporate. Within your domestic vicinity, work & learn from the professionals and apply the gained skills towards the construction of a Learning-based ecosystem. </p>
+
+      <h3>WebDesign Course</h3>
+      <p>All you need is a good-workable effective-reliable internet connectivity, and the determination to work and become a member of the corporate world.</p>
+
+      <img src = "Assests/mypic.jpg" class="img" style="height:60px;"><br><br>
+    </div>
+
+    <div class = "main-content">
+      <h2>WEBSITE DESIGN</h2>
+      <h5>Starting from, Jan 17, 2020</h5>
+      <img src = "Assests/webdesign.png" class = "title-image" style = "height: 200px;">
+
+      <p>Internship training leveraging website designing using HTML, CSS, and JavaScript and BootStrap making you competent to build your own website.</p>
+
+<p>HTML and CSS are the core building blocks of the internet and make up what you see online every day. Just knowing syntax alone is not enough, you need to know how to put it all together. Our approach is to train you to think like a web designer. This internship is designed to train you to play with modern web design, keeping a sharp focus on real-world everyday web development skills. Understand how to use CSS in a modern approach, learning which properties are most commonly used and why.</p>
+<br>
+
+<h2>Who this Internship is for:</h2>
+
+<h5>Your internship will be begun on the 17th of Jan, 2021</h5>
+<ul>
+  <li>Anyone who wants to learn about creating websites.</li>
+  <li>Anyone who wants to develop a step by step understanding of HTML, CSS, JavaScript, and about making a website.</li>
+  <li>Check the details for your live introductory meeting link in your live introductory curriculum session</li>
+</ul>
+
+    </div>
+  </div>
+
+  <div class = "footer">
+    <h2>@Internship Studio</h2>
+  </div>
+
+
+</body>
+
+</html>
